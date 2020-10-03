@@ -17,7 +17,7 @@ PRESS ENTER TO COUNT UP, FLAG WHEN CURRENT COUNT == 0xffffffffff000a41
 CURRENT COUNT: 0x4141414141414141
 ```
 
-Interesting, looks like we can override the buffer here and have control over it.  After bessing around a bit, I realized I could fill the buffer with `\xff * 32`, so thats what I did.
+Interesting, looks like we can override the buffer here and have control over it.  After messing around a bit, I realized I could fill the buffer with `\xff * 32`, so thats what I did.
 ```python
 from pwn import *
 
