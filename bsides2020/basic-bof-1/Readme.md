@@ -1,4 +1,4 @@
-#basic-bof-1
+# basic-bof-1
 This is a super beginner friendly challenge that only really involves returning to a win() function.
 
 Running the binary, we get:
