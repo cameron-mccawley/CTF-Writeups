@@ -17,10 +17,10 @@ If we type in `'or''='` into both the user name and password fields, we can esca
 
 The webiste then presented itself with a little cowsay program, along with a message telling us the flag is located at `/flag` on the server. After playing with the fun program for a bit, I noticed that certain characters would break it.  Things like extra `"` or `'`.  That's when I noticed the `$`, giving me the impression that this cowsay program was being excecuted on the server itself.  So all I would have to do is escape the program.  
 
-So I typed in `boop' && cat /flag`
+So I typed in `boop' && cat /flag '`
 
 ```
-$cowsay 'boop' && cat /flag
+$cowsay 'boop' && cat /flag '
  _______
 < boop >
  -------
