@@ -17,7 +17,7 @@ Uh oh, so ASLR is enabled.  This means we don't know what the address of the win
 
 If the `printf` is used in an insecure way, directly passing user controled variables as arguments to the funtion, then we can make really bad things happen.
 
-For example.  What would happen if we has a printf function like this:
+For example.  What would happen if we have a printf function like this:
 `printf(userinput);`
 and we passed in `%p`?
 
