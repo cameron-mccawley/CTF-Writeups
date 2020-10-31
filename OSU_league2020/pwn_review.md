@@ -18,7 +18,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
 
 Program received signal SIGSEGV, Segmentation fault.
 ```
-Sweet, we crashed, and if we loop at RBP, we can see we have overwritten it with our Bs. `RBP: 0x4242424242424242 ('BBBBBBBB')`
+Sweet, we crashed, and if we look at RBP, we can see we have overwritten it with our Bs. `RBP: 0x4242424242424242 ('BBBBBBBB')`
 That means whatever comes next will overwrite the instruction pointer, so we can return to wherever we want!
 
 So let's actually find the address we want to return to.  We can use `objdump -d pwnreview | grep win` to find the location of the win function.
