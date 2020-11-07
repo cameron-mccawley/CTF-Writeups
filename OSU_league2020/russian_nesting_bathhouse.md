@@ -54,13 +54,13 @@ plain_text.write(result)
 
 And running it we get a PDF file with the first password!
 
-![img1]("img/russian_pdf.png")
+![img1]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_pdf.png?raw=true")
 
 ### Getting the second password and using it
 
 After using the password to open the zip file, we are greeted with a new file titled `polish_cow.mp3`.  The first thing I did was listen to it, and oh boy does it bop.  But it was just a normal song, nothing special.  I then was going to put it in audacity to look at the spetrogram when I noticed that the album art look interesting:
 
-![img2]("img/russian_art.png")
+![img2]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_art.png?raw=true")
 
 And would you look at that title! It says:
 >Why would someone hide a password in mp3 tags?
@@ -103,13 +103,13 @@ And we are able to recover another gzip file.  After uncompressing it, there is 
 With our image extracted, we can run one more tool on it to try to get the rest of the flag.  The tool I will be using for this is `stegsolve.jar`, which is a tool that can reveal differnt color planes of an image.  The planes that give us the rest of the flag are:
 
 #### `osu{first_`
-![img3]("img/russian_bp4.png")
+![img3]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_bp4.png?raw=true")
 
 #### `part_of_`
-![img4]("img/russian_green.png")
+![img4]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_green.png?raw=true")
 
 #### `7h15_flag`
-![img5]("img/russian_blue.png")
+![img5]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_blue.png?raw=true")
 
 Putting everything together, we get our flag!!!
 
