@@ -1,22 +1,3 @@
-xor magic bytes to get key
-decrypt
-use password to open zip
-password in mp3 tags.  Run exiftool on .mp3 -> p4$$w0Rd
-extract cover art -> foremost -t jpeg -i polish_cow.mp3 -T
-
-steghide extract -p 'p4$$w0Rd' -sf picture.jpg -xf out
-This gives us "_dont_forget_5736h1d3"
-
-Stegsolve.jar to view color planes
-green -> "part_of_"
-red/blue -> "7h15_flag"
-blue plane 4 -> "osu{first_"
-
-
-
-osu{first_part_of_7h15_flag_dont_forget_5736h1d3}
-
-
 # Russian Nesting Bathhouse
 > I recall storing the password as a PDF, and I xored it with a 4-byte repeating key (e.g. ab cd ef 01 ab cd ef 01 ...), but I forgot my key, and I cannot get it back :(.
 > Hint: you will not need to brute force this.
@@ -73,13 +54,13 @@ plain_text.write(result)
 
 And running it we get a PDF file with the first password!
 
-![img1]("/img/russian_pdf.png")
+![img1]("img/russian_pdf.png")
 
 ### Getting the second password and using it
 
 After using the password to open the zip file, we are greeted with a new file titled `polish_cow.mp3`.  The first thing I did was listen to it, and oh boy does it bop.  But it was just a normal song, nothing special.  I then was going to put it in audacity to look at the spetrogram when I noticed that the album art look interesting:
 
-![img2]("/img/russian_art.png")
+![img2]("img/russian_art.png")
 
 And would you look at that title! It says:
 >Why would someone hide a password in mp3 tags?
@@ -121,9 +102,15 @@ And we are able to recover another gzip file.  After uncompressing it, there is 
 
 With our image extracted, we can run one more tool on it to try to get the rest of the flag.  The tool I will be using for this is `stegsolve.jar`, which is a tool that can reveal differnt color planes of an image.  The planes that give us the rest of the flag are:
 
+#### `osu{first_`
+![img3]("img/russian_bp4.png")
 
+#### `part_of_`
+![img4]("img/russian_green.png")
 
+#### `7h15_flag`
+![img5]("img/russian_blue.png")
 
+Putting everything together, we get our flag!!!
 
-
-
+`osu{first_part_of_7h15_flag_dont_forget_5736h1d3}`
