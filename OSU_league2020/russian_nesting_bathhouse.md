@@ -109,7 +109,7 @@ With our image extracted, we can run one more tool on it to try to get the rest 
 ![img4]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_green.png?raw=true")
 
 #### `7h15_flag`
-![img5]("https://github.com/cameron-mccawley/CTF-Writeups/blob/main/OSU_league2020/img/russian_blue.png?raw=true")
+![img5]("https://raw.githubusercontent.com/cameron-mccawley/CTF-Writeups/main/OSU_league2020/img/russian_blue.png")
 
 Putting everything together, we get our flag!!!
 
