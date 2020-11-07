@@ -56,7 +56,7 @@ And running it we get a PDF file with the first password!
 
 ![img1](img/russian_pdf.png)
 
-### Getting the second password and using it
+### Getting the second password
 
 After using the password to open the zip file, we are greeted with a new file titled `polish_cow.mp3`.  The first thing I did was listen to it, and oh boy does it bop.  But it was just a normal song, nothing special.  I then was going to put it in audacity to look at the spetrogram when I noticed that the album art look interesting:
 
