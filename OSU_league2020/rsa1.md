@@ -2,7 +2,7 @@
 
 So, to start off, I knew pretty much nothing about cryptography and assumed that it was probably all black magic before this, but after spending 3 days on this challenge asking for help and googling everything I could, I can now say with abosulte certainty that my assumptions are correct.  Crypto is black magic.
 
-To start, we are given two files.  `puzzle.py`, which is the script that was used to encrypt the flag, and `output.txt`, which gives us p, q, n, and our cipher text c.  We also know what e is as it is used in the pythin script provided.
+To start, we are given two files.  `puzzle.py`, which is the script that was used to encrypt the flag, and `output.txt`, which gives us p, q, n, and our cipher text c.  We also know what e is as it is used in the python script provided.
 
 Now searching google for "get d from p q and e", we can use the work and knowledge of other people to solve our own problems!  I found a stackoverflow article [here](https://stackoverflow.com/questions/16310871/how-to-find-d-given-p-q-and-e-in-rsa) which tells us that d is chosen such that `d * e == 1 modulo phi(n)`, where phi is Euler's Totient function.  Normally without knowing p and q, finding Euler's Totient of N would be a computationally hard problem, but with p and q it can simply be calculated as `phi(N) = phi(pq) = phi(p)phi(q) = (p-1)(q-1)`.  So now our d is chosen such that `d * e == 1 modulo (p-1)(q-1)`.  
 
