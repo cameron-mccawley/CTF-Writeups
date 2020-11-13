@@ -57,5 +57,5 @@ And running the script, we get the flag!
 osu{rs4-WI7Hout-P4dDiN9_iS-No7-vErY_SeCurE.-YoU-sH0ULD_u$e-OAEP_Or-4T-13aSt-PKCS1_5!}
 ```
 
-While this was a much easier problem in a technical sense, I think this one requiered much more though, as the solution isn't immediately obvious. 
+While this was a much easier problem in a technical sense, I think this one requiered much more thought, as the solution isn't immediately obvious. 
 
