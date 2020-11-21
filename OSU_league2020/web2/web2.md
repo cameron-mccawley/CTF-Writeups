@@ -76,7 +76,7 @@ After logging in, we are greeted with another page.  This one seems to be some s
 
 ![img](img/notes.png)
 
-We are told to look into "Insecure direct object references", which is a type of access control vulnerability that happens in applications that use user supplied inpit directly.  
+We are told to look into "Insecure direct object references", which is a type of access control vulnerability that happens in applications that use user supplied input directly.  
 
 Opening a note, we can see how we could abuse that:
 
