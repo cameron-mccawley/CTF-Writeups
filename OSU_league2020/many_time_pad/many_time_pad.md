@@ -1,7 +1,7 @@
 # many_time_pad
 
-For this challenge, we are giving a link to a web page.  Going to it, we are greeted with this:
-[img](img/1.png)
+For this challenge, we are giving a link to a web page.  Going to it, we are greeted with this:  
+![img](img/1.png)
 
 They also give us the source code for the web server:
 
@@ -44,7 +44,7 @@ Looking though the source code, it looks like our goal is to find `secret_byte_s
 
 We see here that our plaintext gets padded with `\xff` to get to 256 bytes, so if we just don't input anything into the field box, then we know our plaintext is `\xff\xff\xff ... ` 256 times. So let's try that, and look at the response header we get from sending it.
 
-[img](img/2.png)
+![img](img/2.png)
 
 Alright, looks like we have the ciphertext, now to just XOR it with our plaintext. Xoring and coverting to ascii we get out path:  
 `if-you-tried-to-dirbuster-this-route-I-will-forward-you-the-OSUSEC-AWS-bill-never-gonna-give-you-up-never-gonna-let-you-down-never-gonna-run-around-and-desert-you-never-gonna-make-you-cry-never-gonna-say-goodbye-never-gonna-tell-a-lie-and-hurt-you-12345678`
