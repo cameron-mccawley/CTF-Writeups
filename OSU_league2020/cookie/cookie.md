@@ -130,7 +130,7 @@ Enter any key to refresh
 As a reward for beating cookie clicker, I will turn this into an easy buffer overflow challenge. Enter your payload!
 ```
 
-Woah! We called the win function, but how?  Well, we can probably assume that our variable for our total number of cookies was unsigned, meaning it can only be represented by a positive number.  So when we subract from it when our total is at 0, rather than going negative, the total wraps around and underflows to a super large number.  That number is larger than 18,000,000,000,000,000,000, so the loop exits, and so does the thread.  The `grandpa_loop` function also exits as it's just a while loop that exits when we are above the target number as well! With both threads exited, the win function os called.
+Woah! We called the win function, but how?  Well, we can probably assume that our variable for our total number of cookies was unsigned, meaning it can only be represented by a positive number.  So when we subract from it when our total is at 0, rather than going negative, the total wraps around and underflows to a super large number.  That number is larger than 18,000,000,000,000,000,000, so the loop exits, and so does the thread.  The `grandpa_loop` function also exits as it's just a while loop that exits when we are above the target number as well! With both threads exited, the win function is called.
 
 What's next?  Well, we are directly told that the next part is an easy buffer overflow challenge, so let's overflow a buffer:
 
