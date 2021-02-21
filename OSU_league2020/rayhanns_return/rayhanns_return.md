@@ -126,7 +126,9 @@ ubuntu@ip-172-31-24-45 ~ % find / -perm -4000 2>/dev/null
 /usr/bin/passwd
 ```
 
-Sweet! We have vim as a SETUID, that means we can just read the flag doing `vim .flag` and be able to read its contents:
+Sweet! We have vim as a SETUID, that means we can just read the flag with root privileges by doing `$ vim .flag`:
+
+And we get the flag!  
 
 `osu{rAyh44n_is_b4d_@_0ps3c}`
 
