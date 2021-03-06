@@ -67,6 +67,8 @@ Doing a simple google search for arbitrary read with Flask injection will give u
 
 And running it we get the flag!
 
+![img3](img/3.png)
+
 ```
 OSUSEC{ok_s0_y0u_f1gur3d-out_d1rect0ry-tr@versal_w0nt-b3_helpful-here?}
 ```
