@@ -28,7 +28,7 @@ void get_input(long param_1)
 }
 ```
 
-Interseting, it looks like we do an `fgets` to param_1 plus an offset, but `param_1` is a variable that was passed into this function, so we followed that parameter up to see where it came from. Eventually, we were led to the main function of the program where we can see where it was initilized:
+Interseting, it looks like we do an `fgets` to `param_1` plus an offset, but `param_1` is a variable that was passed into this function, so we followed that parameter up to see where it came from. Eventually, we were led to the main function of the program where we can see where it was initilized:
 
 ```c++
 undefined8 main(void)
