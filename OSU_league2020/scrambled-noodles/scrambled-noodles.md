@@ -18,7 +18,7 @@ Haha, I made you solve a stego chall to get an update on this case! Happy late A
 I've looked into that WLAN hotspot thing and I think I've got a lead. It's a guy who goes by "Barron Benedict Jr. III", an alleged resident of Ascension island... I've seen him use online username "TwoBoatsMan2", but apart from that, I have no further progress, I've been addicted to this game AmongUs...
 ```
 
-So we have a username: "TwoBoatsMan2". Let's run this through namechk.com to see what accounts are linked to that username:
+So we have a username: "TwoBoatsMan2". Let's run this through [namechk.com](https://namechk.com/) to see what accounts are linked to that username:
 
 ![namechk](img/osint-2.png)
 
@@ -47,7 +47,7 @@ HAHA Maybe later I will share the full Hotspot Story! My third neighbor (who wil
 > Now the world knows I'm operating a hotspot
 
 Oh man, now this is getting good. If the whole world can see he is operating a hotspot, how can we see that?
-Digging through osintframework.com we see a tool titled "WiGLE: Wireless Network Mapping". Through this site, we can just enter in a MAC address and see not only where that device is emmitting a wireless signal, but also the name of that wireless network. Typing in our MAC address we got from the screenshot and we get our flag!
+Digging through [osintframework.com](https://osintframework.com/) we see a tool titled "WiGLE: Wireless Network Mapping". Through this site, we can just enter in a MAC address and see not only where that device is emmitting a wireless signal, but also the name of that wireless network. Typing in our MAC address we got from the screenshot and we get our flag!
 
 ![flag](img/osint-8.png)
 
